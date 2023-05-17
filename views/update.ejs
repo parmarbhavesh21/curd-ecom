@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>update Form</h2>
+    <form action="/update/<%=details._id%>" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="" placeholder="Enter Your name" value="<%=details.name%>">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="" placeholder="Enter Your Email" value="<%=details.email%>">
+        </div>
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" name="password" id="" placeholder="Enter Your password" value="<%=details.password%>">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="">
+        </div>
+    </form>
+</body>
+</html>
